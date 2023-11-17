@@ -1,5 +1,5 @@
 // Next image
-import image from "next/image";
+import Image from "next/image";
 
 // Components
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -11,6 +11,8 @@ import { motion } from "framer-motion";
 
 // Variants
 import { fadeIn } from "../variants";
+
+import Typing from "/components/Typing";
 
 const Home = () => {
   return (
@@ -28,9 +30,12 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Fazendo coisas <br /> Pra{" "}
-            <span className="text-accent">Ganhar dinheiro</span>
+            Eu sou <br />{" "}
+            <span className="text-accent">
+              <Typing />
+            </span>
           </motion.h1>
+
           {/* subtitulo */}
           <motion.p
             variants={fadeIn("down", 0.3)}
@@ -39,8 +44,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the
+            Apaixonado por astronomia e sempre tentando se aprimorar até
+            alcançar o infinito.
           </motion.p>
           {/* botão */}
           <div className="flex justify-center xl:hidden relative">
