@@ -6,12 +6,14 @@ import {
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
+  HiOutlineHome,
+  HiOutlineUser,
 } from "react-icons/hi2";
 
 // nav data
 export const navData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "sobre", path: "/about", icon: <HiUser /> },
+  { name: "home", path: "/", icon: <HiOutlineHome /> },
+  { name: "sobre", path: "/about", icon: <HiOutlineUser /> },
   { name: "serviços", path: "/services", icon: <HiRectangleGroup /> },
   { name: "trabalho", path: "/work", icon: <HiViewColumns /> },
   {
