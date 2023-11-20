@@ -8,23 +8,25 @@ import {
   HiEnvelope,
   HiOutlineHome,
   HiOutlineUser,
+  HiOutlineChartBarSquare,
+  HiOutlineEnvelope,
 } from "react-icons/hi2";
 
 // nav data
 export const navData = [
   { name: "home", path: "/", icon: <HiOutlineHome /> },
   { name: "sobre", path: "/about", icon: <HiOutlineUser /> },
-  { name: "serviços", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "trabalho", path: "/work", icon: <HiViewColumns /> },
-  {
-    name: "coisas",
-    path: "/testimonials",
-    icon: <HiChatBubbleBottomCenterText />,
-  },
+  // { name: "serviços", path: "/services", icon: <HiRectangleGroup /> },
+  { name: "projetos", path: "/work", icon: <HiOutlineChartBarSquare  /> },
+  // {
+  //   name: "coisas",
+  //   path: "/testimonials",
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
     name: "contato",
     path: "/contact",
-    icon: <HiEnvelope />,
+    icon: <HiOutlineEnvelope  />,
   },
 ];
 

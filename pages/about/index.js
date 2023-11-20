@@ -29,6 +29,15 @@ import {
 //  data
 const aboutData = [
   {
+    title: "about",
+    info: [
+      {
+        title: "Iniciei minha jornada em 2022, imergindo nos estudos de desenvolvimento web e engenharia de dados. Hoje estou no mercado de trabalho utilizando todo meu conhecimento para solucionar problemas e aprendendo cada dia mais. Gosto de gatos, frio, astronomia, livros, uns jogos indies e animes.",
+      },
+
+    ],
+  },
+  {
     title: "skills",
     info: [
       {
@@ -68,17 +77,34 @@ const aboutData = [
     ],
   },
   {
-    title: "cats",
+    title: "education",
     info: [
       {
-        title: "Mi Catitos",
-        icons: [
-          <Catitos />
-        ],
+        title: "ADS - Descomplica",
+        stage: "01/2023 - 06/2025",
       },
-
+      {
+        title: "FullStack Java - Generation",
+        stage: "01/2022 - 04/2022",
+      },
+      {
+        title: "Téc. ADM - Senac",
+        stage: "03/2021 - 07/2022",
+      },
     ],
   },
+  // {
+  //   title: "cats",
+  //   info: [
+  //     {
+  //       title: "Mi Catitos",
+  //       icons: [
+  //         <Catitos />
+  //       ],
+  //     },
+
+  //   ],
+  // },
 ];
 
 // Components
@@ -111,7 +137,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-2xl font-extrabold mb-2 xl:h2"
+            className="text-2xl font-extrabold mb-6 xl:h2"
           >
             Data Engineer e Web Developer: Conectando <span className="text-accent">Dados</span>, Criando <span className="text-accent">Experiências</span>.
           </motion.h2>
@@ -120,7 +146,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="hidden max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             Iniciei minha jornada em 2022, imergindo nos estudos de desenvolvimento web e engenharia de dados. Hoje estou no mercado de trabalho onde mostro meus conhecimentos e aprendo cada vez mais.
           </motion.p>
@@ -130,11 +156,11 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative flex-1 after:w-[1px] after:h-full xl:after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={1} end={1} duration={5} /> +
                 </div>

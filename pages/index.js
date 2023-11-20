@@ -44,7 +44,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Apaixonado por astronomia e sempre tentando se aprimorar até
+            Apaixonado por astronomia e sempre tentando me aprimorar até
             alcançar o infinito.
           </motion.p>
           {/* botão */}
