@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const Bulb = () => {
   return (
-    <div className="absolute -left-36 -bottom-12 mix-blend-color-dodge animate-pulse duration-75 z-10 w-[200px] xl:w-[260px]">
+    <div className="hidden xl:flex mix-blend-color-dodge absolute -left-26 -bottom-0  z-10 w-[300px] xl:w-[360px]">
       <Image
-        src={"/bulb.png"}
+        src={"/casca.png"}
         width={260}
         height={200}
         className="w-full h-full"

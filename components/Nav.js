@@ -15,9 +15,9 @@ import {
 // nav data
 export const navData = [
   { name: "home", path: "/", icon: <HiOutlineHome /> },
-  { name: "sobre", path: "/about", icon: <HiOutlineUser /> },
+  { name: "sobre", path: "/sobre", icon: <HiOutlineUser /> },
   // { name: "serviços", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "projetos", path: "/work", icon: <HiOutlineChartBarSquare  /> },
+  { name: "projetos", path: "/projetos", icon: <HiOutlineChartBarSquare  /> },
   // {
   //   name: "coisas",
   //   path: "/testimonials",
@@ -25,7 +25,7 @@ export const navData = [
   // },
   {
     name: "contato",
-    path: "/contact",
+    path: "/contato",
     icon: <HiOutlineEnvelope  />,
   },
 ];
