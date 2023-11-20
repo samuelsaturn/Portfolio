@@ -19,12 +19,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiDatabricks,
-  SiPandas,
-
-} from "react-icons/si";
+import { SiNextdotjs, SiDatabricks, SiPandas } from "react-icons/si";
 
 //  data
 const aboutData = [
@@ -32,9 +27,9 @@ const aboutData = [
     title: "about",
     info: [
       {
-        title: "Iniciei minha jornada em 2022, imergindo nos estudos de desenvolvimento web e engenharia de dados. Hoje estou no mercado de trabalho utilizando todo meu conhecimento para solucionar problemas e aprendendo cada dia mais. Gosto de gatos, frio, astronomia, livros, uns jogos indies e animes.",
+        title:
+          "Iniciei minha jornada em 2022, imergindo nos estudos de desenvolvimento web e engenharia de dados. Hoje estou no mercado de trabalho utilizando todo meu conhecimento para solucionar problemas e aprendendo cada dia mais. Gosto de gatos, frio, astronomia, livros, uns jogos indies e animes.",
       },
-
     ],
   },
   {
@@ -43,19 +38,24 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <FaNodeJs />,
-          <SiNextdotjs />,
-          <FaWordpress />,
-          <FaShopify />,
+          { id: 1, icon: <FaHtml5 /> },
+          { id: 2, icon: <FaCss3 /> },
+          { id: 3, icon: <FaJs /> },
+          { id: 4, icon: <FaReact /> },
+          { id: 5, icon: <FaNodeJs /> },
+          { id: 6, icon: <SiNextdotjs /> },
+          { id: 7, icon: <FaWordpress /> },
+          { id: 8, icon: <FaShopify /> },
         ],
       },
       {
         title: "Data Engineering",
-        icons: [<FaPython />, <FaAws />, <SiDatabricks />, <SiPandas />],
+        icons: [
+          { id: 9, icon: <FaPython /> },
+          { id: 10, icon: <FaAws /> },
+          { id: 11, icon: <SiDatabricks /> },
+          { id: 12, icon: <SiPandas /> },
+        ],
       },
     ],
   },
@@ -139,7 +139,9 @@ const About = () => {
             exit="hidden"
             className="text-2xl font-extrabold mb-6 xl:h2"
           >
-            Data Engineer e Web Developer: Conectando <span className="text-accent">Dados</span>, Criando <span className="text-accent">Experiências</span>.
+            Data Engineer e Web Developer: Conectando{" "}
+            <span className="text-accent">Dados</span>, Criando{" "}
+            <span className="text-accent">Experiências</span>.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -148,7 +150,9 @@ const About = () => {
             exit="hidden"
             className="hidden max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Iniciei minha jornada em 2022, imergindo nos estudos de desenvolvimento web e engenharia de dados. Hoje estou no mercado de trabalho onde mostro meus conhecimentos e aprendo cada vez mais.
+            Iniciei minha jornada em 2022, imergindo nos estudos de
+            desenvolvimento web e engenharia de dados. Hoje estou no mercado de
+            trabalho onde mostro meus conhecimentos e aprendo cada vez mais.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -209,7 +213,11 @@ const About = () => {
                   <div className="flex gap-x-4 mb-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return (
+                        <div key={icon.id} className="text-2xl text-white">
+                          {icon.icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
