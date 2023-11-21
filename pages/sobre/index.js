@@ -137,7 +137,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-2xl font-extrabold mb-6 xl:h2"
+            className="hidden md:block text-2xl font-extrabold mb-6 xl:h2"
           >
             Data Engineer e Web Developer: Conectando{" "}
             <span className="text-accent">Dados</span>, Criando{" "}
