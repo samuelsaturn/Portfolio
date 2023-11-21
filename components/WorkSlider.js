@@ -39,7 +39,7 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/feeling.png",
+          path: "/Feeling.png",
           name: 'Feeling',
           link: 'https://feeling-mkqtctne1-feeling.vercel.app/entrar',
         },
