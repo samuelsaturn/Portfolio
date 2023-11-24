@@ -48,7 +48,7 @@ const Home = () => {
             alcançar o infinito.
           </motion.p>
           {/* botão */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative z-20">
             <ProjectsBtn />
           </div>
           <motion.div
