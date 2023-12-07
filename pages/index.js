@@ -17,13 +17,6 @@ import Typing from "/components/Typing";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
-      <head>
-        <meta property="og:title" content="Samuel Saturn Dev" />
-        <meta property="og:description" content="Portfólio Maneirinho" />
-        <meta property="og:image:width" content="1920" />
-        <meta property="og:image:height" content="1080" />
-        <meta property="og:locale" content="pt_BR" />
-      </head>
       {/* bg img */}
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-center xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
       {/* texto */}
