@@ -17,6 +17,11 @@ import Typing from "/components/Typing";
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
+    <head>
+      <meta property="og:title" content="Home" />
+      <meta property="og:description" content="Home" />
+      <meta property="og:image" content="https://cdn2.unrealengine.com/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg" />
+    </head>
       {/* bg img */}
       <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-center xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
       {/* texto */}
