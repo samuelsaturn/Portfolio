@@ -20,10 +20,6 @@ const Home = () => {
       <head>
         <meta property="og:title" content="Samuel Saturn Dev" />
         <meta property="og:description" content="Portfólio Maneirinho" />
-        <meta
-          property="og:image"
-          content="https://clipart-library.com/images_k/transparent-sun-tumblr/transparent-sun-tumblr-19.png"
-        />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
         <meta property="og:locale" content="pt_BR" />
