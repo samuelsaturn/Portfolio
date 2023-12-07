@@ -22,7 +22,7 @@ const Home = () => {
         <meta property="og:description" content="Portfolio Maneirinho" />
         <meta
           property="og:image"
-          content="https://cdn2.unrealengine.com/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg"
+          content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ec6143f1-5c7f-4d6c-b104-17a42e32ba4a/dd7pr1d-ead17cf5-aac7-4ec9-9371-7c444e1f37c8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VjNjE0M2YxLTVjN2YtNGQ2Yy1iMTA0LTE3YTQyZTMyYmE0YVwvZGQ3cHIxZC1lYWQxN2NmNS1hYWM3LTRlYzktOTM3MS03YzQ0NGUxZjM3YzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Zm0qwwtfICG5Djost7j1PLI7V1Kj2fjNwRknIgwyJEk"
         />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
