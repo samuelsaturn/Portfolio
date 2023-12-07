@@ -19,7 +19,7 @@ const Home = () => {
     <div className="bg-primary/60 h-full">
       <head>
         <meta property="og:title" content="Samuel Saturn Dev" />
-        <meta property="og:description" content="Portfolio Maneirinho" />
+        <meta property="og:description" content="Portfólio Maneirinho" />
         <meta
           property="og:image"
           content="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ec6143f1-5c7f-4d6c-b104-17a42e32ba4a/dd7pr1d-ead17cf5-aac7-4ec9-9371-7c444e1f37c8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VjNjE0M2YxLTVjN2YtNGQ2Yy1iMTA0LTE3YTQyZTMyYmE0YVwvZGQ3cHIxZC1lYWQxN2NmNS1hYWM3LTRlYzktOTM3MS03YzQ0NGUxZjM3YzgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Zm0qwwtfICG5Djost7j1PLI7V1Kj2fjNwRknIgwyJEk"
