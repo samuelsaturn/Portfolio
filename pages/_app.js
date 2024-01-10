@@ -1,5 +1,8 @@
 import "../styles/globals.css";
 
+// Head
+import Head from 'next/head'
+
 // Components
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
@@ -14,6 +17,10 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <Layout>
+      <Head>
+        <link rel="icon" href="/public/favicon-saturn.ico" />
+        <link rel="shortcut icon" href="/public/favicon-saturn.ico" />
+      </Head>
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
           <Transition />
