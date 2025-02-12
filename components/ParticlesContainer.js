@@ -83,7 +83,7 @@ const ParticlesContainer = () => {
           shape: {
             type: "image",
               image: {
-                  src: "https://imgur.com/6LfGSEO.png",
+                  src: "https://imgur.com/xrGOlNT.png",
                   height: 20,
                   width: 20,
                 },
