@@ -32,7 +32,8 @@ const Work = () => {
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
               {" "}
-              Tem projetos tanto feitos em HTML, CSS, JS, quanto projetos de e-commerce utilizando Shopify, Wordpress e futuramente NuvemShop.
+              Desenvolvidos com WordPress, Shopify ou código puro.
+              Inclui projetos profissionais e acadêmicos.
             </motion.p>
           </div>
           {/* slider */}

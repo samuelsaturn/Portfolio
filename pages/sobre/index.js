@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+import Image from "next/image";
+import CalypsoIcon from "/public/calypso-icon 1.png";
+
 // catos
 import Catitos from "../../components/Catitos";
 
@@ -17,9 +20,14 @@ import {
   FaPython,
   FaAws,
   FaNodeJs,
+  FaJava,
+  FaLinux,
+  FaWindows,
 } from "react-icons/fa";
 
-import { SiNextdotjs, SiDatabricks, SiPandas } from "react-icons/si";
+import { SiNextdotjs, SiDatabricks, SiPandas, SiMacos  } from "react-icons/si";
+
+import { BsFiletypeSql  } from "react-icons/bs";
 
 //  data
 const aboutData = [
@@ -36,25 +44,34 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Development",
         icons: [
-          { id: 1, icon: <FaHtml5 /> },
-          { id: 2, icon: <FaCss3 /> },
+          { id: 1, icon: <FaJava /> },
+          { id: 2, icon: <BsFiletypeSql /> },
+          { id: 9, icon: <Image src={CalypsoIcon} alt="Calypso Icon" width={32} height={32} />},
           { id: 3, icon: <FaJs /> },
           { id: 4, icon: <FaReact /> },
           { id: 5, icon: <FaNodeJs /> },
           { id: 6, icon: <SiNextdotjs /> },
           { id: 7, icon: <FaWordpress /> },
           { id: 8, icon: <FaShopify /> },
+          
         ],
       },
       {
         title: "Data Engineering",
         icons: [
           { id: 9, icon: <FaPython /> },
-          { id: 10, icon: <FaAws /> },
-          { id: 11, icon: <SiDatabricks /> },
-          { id: 12, icon: <SiPandas /> },
+          { id: 10, icon: <SiDatabricks /> },
+          { id: 11, icon: <SiPandas /> },
+        ],
+      },
+      {
+        title: "SO",
+        icons: [
+          { id: 12, icon: <FaLinux /> },
+          { id: 13, icon: <FaWindows /> },
+          { id: 14, icon: <SiMacos /> },
         ],
       },
     ],
@@ -63,16 +80,16 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Web Developer - Mobitype",
-        stage: "11/2022 - 04/2023",
+        title: "Calypso Technical - Nfq Advisory",
+        stage: "05/2025 - now",
+      },
+      {
+        title: "Full Stack Developer - Emakeit",
+        stage: "11/2022 - 04/2024",
       },
       {
         title: "Data Engineer - Mobitype/Provu",
         stage: "05/2023 - 07/2023",
-      },
-      {
-        title: "Web Developer - Mobitype/Emakeit",
-        stage: "08/2023 - now",
       },
     ],
   },
@@ -80,11 +97,11 @@ const aboutData = [
     title: "education",
     info: [
       {
-        title: "ADS - Descomplica",
+        title: "ADS - UniAmérica",
         stage: "01/2023 - 06/2025",
       },
       {
-        title: "FullStack Java - Generation",
+        title: "Full Stack Java - Generation",
         stage: "01/2022 - 04/2022",
       },
       {
@@ -139,7 +156,7 @@ const About = () => {
             exit="hidden"
             className="hidden md:block text-2xl font-extrabold mb-6 xl:h2"
           >
-            Data Engineer e Web Developer: Conectando{" "}
+            Data Engineer e Developer: Conectando{" "}
             <span className="text-accent">Dados</span>, Criando{" "}
             <span className="text-accent">Experiências</span>.
           </motion.h2>
@@ -166,10 +183,10 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full xl:after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={1} end={1} duration={5} /> +
+                  <CountUp start={1} end={2} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-full]">
-                  ano de experiência
+                  anos de experiência
                 </div>
               </div>
             </div>
@@ -204,13 +221,13 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60 mb-3"
                 >
                   {/* title */}
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div className="">{item.stage}</div>
-                  <div className="flex gap-x-4 mb-4">
+                  <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
                       return (

@@ -57,6 +57,16 @@ export const workSlides = {
         },
       ],
     },
+    {
+      images: [
+        {
+          title: "title",
+          path: "/FluxoEventos.png",
+          name: 'Fluxo Eventos',
+          link: 'https://fluxoeventos.com.br/',
+        },
+      ],
+    },
   ],
 };
 
