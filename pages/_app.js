@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <title>Samuel Saturn 🪐</title>
       </Head>
 
       <AnimatePresence mode="wait">
